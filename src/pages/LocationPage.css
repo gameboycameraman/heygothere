@@ -1,0 +1,20 @@
+.parent {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+}
+
+.map {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.map iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
