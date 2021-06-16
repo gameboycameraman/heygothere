@@ -14,5 +14,4 @@ p, a {
 .list-locations {
   display: flex;
   flex-direction: column;
-  height: 250px;
 }

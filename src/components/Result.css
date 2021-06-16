@@ -3,14 +3,21 @@
   src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype"); 
 } 
 
-.result {
+.result-container {
   background-color: white;
   padding: 1rem;
   margin: 5px;
+  width: 13rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.result-content {
   text-decoration: none;
   font-family: Lato-Regular;
 }
 
-.result:first-child {
+.result-container:first-child {
   margin-top: 10px;
 }

@@ -21,10 +21,12 @@ body {
 }
 
 .title {
+  margin: 5px;
   font-family: Superscript, sans-serif;
 }
 
 .search-field {
+  margin: 5px;
   padding: 1rem;
   border-width: 5px;
   background-color: #EFEFEF;
