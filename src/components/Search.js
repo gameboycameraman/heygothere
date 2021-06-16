@@ -24,21 +24,11 @@ class Search extends React.Component {
           <div className="list-locations">
             <Fetch url={'https://code-challenge-backend.herokuapp.com/locations?q=' + this.state.location}>
               {({ fetching, failed, data }) => {
-                if (fetching) {
-                  return <div>Loading data...</div>;
-                }
-
-                if (failed) {
-                  return <div>The request did not succeed.</div>;
-                }
-
                 if (data != null && data.length > 0) {
                   return data.map(location => {
-                    console.log(location);
                     return <Result key={location.id} url={location.id} name={location.name}/>
                   });
                 }
-
                 return null;
               }}
             </Fetch>

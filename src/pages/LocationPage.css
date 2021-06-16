@@ -3,12 +3,6 @@
   src: url("../fonts/superscript/SUPERSCR.TTF") format("truetype"); 
 }
 
-.parent {
-  /* display: flex;
-  flex-direction: column;
-  height: 250px; */
-}
-
 .map {
   padding-bottom: 35%;
   position: relative;
