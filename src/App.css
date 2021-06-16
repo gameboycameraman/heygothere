@@ -3,7 +3,7 @@
   src: url("fonts/Lato/Lato-Regular.ttf") format("truetype"); 
 }
 
-p {
+p, a {
   font-family: Lato-Regular;
 }
 
