@@ -20,7 +20,7 @@ class Search extends React.Component {
       <div className="App">
         <div className="homepage">
           <h2 className="title">HeyGo! Let's Go!</h2>
-          <input className="search-field" type="text" placeholder="Type in a location" value={this.state.location} onChange={this.searchLocation}/>
+          <input className="search-field" type="text" placeholder="Type in a location" value={this.state.location} onChange={this.searchLocation} data-testid="search-field"/>
           <div className="list-locations">
             <Fetch url={'https://code-challenge-backend.herokuapp.com/locations?q=' + this.state.location}>
               {({ fetching, failed, data }) => {
