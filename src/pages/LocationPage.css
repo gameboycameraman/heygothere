@@ -1,20 +1,53 @@
+@font-face { 
+  font-family: Superscript; 
+  src: url("../fonts/superscript/SUPERSCR.TTF") format("truetype"); 
+}
+
 .parent {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  height: 250px;
+  height: 250px; */
 }
 
 .map {
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
+  padding-bottom: 35%;
+  position: relative;
+}
+
+@media only screen and (max-width: 900px) {
+  .map {
+    padding-bottom: 120%;
+  }
 }
 
 .map iframe {
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  max-width: 100%;
+  position: absolute;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.location-title {
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+
+.link {
+  padding: 1rem;
+  border-width: 5px;
+  background-color: white;
+  border: none;
+  text-decoration: none;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.search {
+  font-family: Superscript, sans-serif;
 }

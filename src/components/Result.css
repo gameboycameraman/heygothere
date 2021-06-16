@@ -1,0 +1,16 @@
+@font-face { 
+  font-family: Lato-Regular; 
+  src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype"); 
+} 
+
+.result {
+  background-color: white;
+  padding: 1rem;
+  margin: 5px;
+  text-decoration: none;
+  font-family: Lato-Regular;
+}
+
+.result:first-child {
+  margin-top: 10px;
+}

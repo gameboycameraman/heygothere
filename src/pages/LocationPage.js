@@ -7,7 +7,6 @@ import GoogleMap from '../components/GoogleMap';
 
 function LocationPage(props) {
   const params = useParams();
-  let locationDetails;
   console.log("LOCATION")
   console.log("This is params", params);
   console.log("This is props.name", props.name);
@@ -17,26 +16,16 @@ function LocationPage(props) {
     <>
       <Fetch url={'https://code-challenge-backend.herokuapp.com/locations/' + params.id}>
         {({ fetching, failed, data }) => {
-          if (fetching) {
-            return <div>Loading data...</div>;
-          }
-
-          if (failed) {
-            return <div>The request did not succeed.</div>;
-          }
-
           if (data) {
             console.log(data)
             return (
               <div className="parent">
-                <div>
-                  <p>Welcome to {data.name}!</p>
-                </div>
+                <p className="center location-title">Welcome to {data.name}!</p>
                 <div className="map">
                   <GoogleMap latitude={data.latitude} longitude={data.longitude} />
                 </div>
-                <div>
-                  <Link to={'/'}>Start a new Search!</Link>
+                <div className="center">
+                  <Link to={'/'} className="link">Start a new <span className="search">Search!</span></Link>
                 </div>
               </div>
             )

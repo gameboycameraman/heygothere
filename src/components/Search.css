@@ -1,0 +1,34 @@
+@font-face { 
+  font-family: Superscript; 
+  src: url("../fonts/superscript/SUPERSCR.TTF") format("truetype"); 
+} 
+
+@font-face { 
+  font-family: Lato-Light; 
+  src: url("../fonts/Lato/Lato-Light.ttf") format("truetype"); 
+} 
+
+body {
+  background-color: #dfff9a;
+}
+
+.homepage {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -120px;
+}
+
+.title {
+  font-family: Superscript, sans-serif;
+}
+
+.search-field {
+  padding: 1rem;
+  border-width: 5px;
+  background-color: #EFEFEF;
+  border: none;
+  width: 13rem;
+  font-family: Lato-Light;
+}
